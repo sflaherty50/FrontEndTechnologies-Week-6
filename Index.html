@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Document</title>
+
+
+</head>
+
+
+
+    <body class="text-black bg-info">
+    
+
+    <div class="container">
+        <h1>Sneakers for sale</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Add Sneaker</h3>
+<form>
+                <form autocomplete="off"> </form>
+
+                    <div class="form-group" style="display: none;">
+                        <label>Sneaker ID (Auto-Generated):</label>
+                        <input type="integer" id="sneakerID" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Store Name:</label>
+                        <input type="text" id="storeName" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Brand:</label>
+                        <select id="Brand" class="form-control">
+                            <option value="">--Select Brand--</option>
+                            <option value="Nike">Nike</option>
+                            <option value="UnderArmour">UnderArmour</option>
+                            <option value="NewBalance">NewBalance</option>
+                            <option value="Adidas">Adidas</option>
+                            <option value="Converse">Converse</option>
+                        </select>
+
+                        <div class="form-group">
+                            <label>Sneaker Style:</label>
+                            <input type="text" id="sneakerStyle" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Size:</label>
+                            <input type="number" min="0.0" max="16" step="0.5" id="sneakerSize" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Price:</label>
+                            <input type="number" min="0.00" max="10000.00" step="0.01" id="sneakerPrice" class="form-control">
+                        </div>
+
+
+                        <div class="form-action-buttons">
+                            <input type="submit" id="btnSubmit" value="Submit">
+                            <input type="submit" class="d-none" id="btnUpdate" value="Update">
+                        </div>
+
+                </form>
+            </div>
+
+            <div>
+                  <a href="Main.html" class="btn btn-lg btn-secondary fw-bold border-white bg-black">Home</a>
+            </div>
+
+            <img height="200px" src="https://n4.sdlcdn.com/imgs/i/v/q/Nike-OG-FREE-RUN-Grey-SDL158543215-1-dc6ee.jpeg" alt="Sneaker.">
+           
+        </div>
+        <div class="col-md-8">
+            <table class="table list" id="sneakerList">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Store Name</th>
+                      <th scope="col">Brand</th>
+                      <th scope="col">Sneaker Style</th>
+                      <th scope="col">Size</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="index.js"></script>
+</body>
+</body>
+
+</html>
